@@ -50,7 +50,7 @@ function setSound() {
 		x = items.sound;
 		var select = document.getElementById('sound');
 		var option;
-		for (var i=0;i<=5;i++) {
+		for (var i=0;i<=7;i++) {
 			option = select.options[i];
 			if (option.value == x) {
 				option.setAttribute('selected', true);
@@ -61,11 +61,12 @@ function setSound() {
 }
 
 function createSelect() {
-	for (let i=0;i<4;i++) {
+	var sounds = ["6 Dzień", "Notify", "Power Rangers","Kiedyś to było","Wololo","Zduńska Wola"];
+	for (let i=0;i<6;i++) {
 		var opt = document.createElement('option');
 		opt.value = i;
 		opt.id = 's'+i;
-		opt.innerHTML = i;
+		opt.innerHTML = sounds[i];
 		sound.appendChild(opt);
 	}
 }

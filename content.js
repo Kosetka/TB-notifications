@@ -2,13 +2,13 @@ var d = document.getElementById("show_notification_count");
 d.style.fontSize = "10em";
 
 setInterval(function () {
-	location.href="javascript:countNotifications(); void 0";
+	location.href="javascript:countNotificationsIt(); void 0";
 },1000);
 
 if (localStorage.getItem('ranger')===null)
 	localStorage.setItem('ranger','0');
 var rangers = ["https://i.imgur.com/bofm0HI.png","https://i.imgur.com/jxDaurc.jpg", "https://i.imgur.com/CxNVfRU.jpg", "https://i.imgur.com/4PuDRce.png", "https://i.imgur.com/nuNFQgg.jpg", "https://i.imgur.com/M6PwDcw.jpg","https://i.imgur.com/aDbOTBj.jpg"];
-var sounds = ["6dzien", "notify", "power","kiedystobylo"];
+var sounds = ["6dzien", "notify", "power","kiedystobylo","wololo","zdunska"];
 
 window.setInterval(function(){
 	let currentNotifications = localStorage.getItem('notifications');
